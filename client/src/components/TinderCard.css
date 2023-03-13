@@ -1,0 +1,22 @@
+.swipe {
+    grid-column: 1;
+    grid-row: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+
+}
+.MuiIconButton-root{
+    border-radius: 8px !important;
+}
+.MuiIconButton-label{
+    font-size: 1rem;
+}
+
+
+
+
+
+
