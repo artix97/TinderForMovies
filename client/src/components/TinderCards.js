@@ -62,12 +62,12 @@ function TinderCards() {
     if (direction === "down") {
       setShowSummary(false);
       console.log("move accepted")
-      // acceptMovie(movie);
+      acceptMovie(movie);
       return updateCurrentIndex(index - 1);
     }
     setShowSummary(false);
     console.log("move rejected")
-    // rejectMovie(movie);
+    rejectMovie(movie);
     updateCurrentIndex(index - 1);
   };
 
