@@ -11,8 +11,8 @@ localhost:8080/recommendations
 localhost:8080/recommendations/{id}/accept
 localhost:8080/recommendations/{id}/reject
 ```
-Po uruchomieniu serwera możemy zająć się uruchomieniem aplikacji właściwej; 
-aby to zrobić należy uruchomić 2 terminal:
+After starting the server, we can take care the appropriate application; 
+to do this, run terminal 2:
 ```
 cd client
 npm run start
@@ -24,3 +24,10 @@ By default, moving the window down sends /recommendations / {id} / accept from t
 Moving up, left, or right sends /recommendations / {id} / reject. 
 In response to each of the queries, we can observe a list of movies currently added to them. 
 Additionally added buttons that mimic swipe.
+__________________
+Tests have also been prepared to check whether the application displays and works correctly.
+When running tests, the operation of the "server"application is not required
+```
+cd client
+npm run test
+```
