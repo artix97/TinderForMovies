@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from './components/Header';
 import TinderCards from './components/TinderCards';
 
+
 function App() {
+  
   return (
     <div className="App">
       <Router>

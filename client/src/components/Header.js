@@ -7,6 +7,7 @@ function Header({ backButton }) {
 
   return (
     <Box
+    data-testid="header"
       sx={{
         display: "flex",
         justifyContent: "center",

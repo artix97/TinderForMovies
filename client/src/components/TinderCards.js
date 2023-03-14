@@ -1,6 +1,6 @@
 import React, { useContext, useState, useRef, useMemo, useEffect } from "react";
 import MoviesData from "../MovieDataContext";
-// import "./TinderCard.css";
+import "./TinderCard.css";
 import { IconButton } from "@material-ui/core";
 import Box from "@mui/material/Box";
 import { Close, Check, SentimentVerySatisfied, Info } from "@material-ui/icons";
@@ -88,6 +88,8 @@ function TinderCards() {
 
   return (
     <Box
+      data-testid="movie-list"
+
       sx={{
         display: "grid",
         justifyContent: "center",
@@ -141,7 +143,7 @@ function TinderCards() {
 
       {database.map((movie, index) => (
         <TinderCard
-        id={`swipe-card-${index}`}
+          id={`swipe-card-${index}`}
           className="swipe"
           ref={childRefs[index]}
           key={index}
@@ -150,6 +152,7 @@ function TinderCards() {
           // preventSwipe={["up", "down"]}
         >
           <Box
+          data-testid="movie-title"
             sx={{
               color: "black",
               borderTopLeftRadius: "20px",
@@ -163,6 +166,7 @@ function TinderCards() {
             {movie.name} ({movie.ratings}/10)
           </Box>
           <Box
+            data-testid="movie"
             sx={{
               position: "relative",
               width: `${desktopMedia ? "800px" : "600px"}`,
@@ -247,6 +251,7 @@ function TinderCards() {
             Accept
           </IconButton>
           <IconButton
+          data-testid="reject-btn"
             style={{ color: "#ec5e6f" }}
             onClick={() => swipe("right")}
           >
