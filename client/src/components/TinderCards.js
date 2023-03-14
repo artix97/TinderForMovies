@@ -61,11 +61,13 @@ function TinderCards() {
   const swiped = (direction, index, movie) => {
     if (direction === "down") {
       setShowSummary(false);
-      acceptMovie(movie);
+      console.log("move accepted")
+      // acceptMovie(movie);
       return updateCurrentIndex(index - 1);
     }
     setShowSummary(false);
-    rejectMovie(movie);
+    console.log("move rejected")
+    // rejectMovie(movie);
     updateCurrentIndex(index - 1);
   };
 
